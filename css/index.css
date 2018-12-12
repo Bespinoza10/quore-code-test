@@ -3,12 +3,12 @@
 }
 @font-face {
   font-family: "Lato";
-  src: url('Lato_Font/Lato-Medium.ttf') format('truetype');
+  src: url('../Lato_Font/Lato-Medium.ttf') format('truetype');
 }
 
 @font-face{
   font-family: "Lato-Light";
-  src: url('Lato_Font/Lato-Light.ttf') format('truetype');
+  src: url('../Lato_Font/Lato-Light.ttf') format('truetype');
 }
 
 body{
@@ -118,8 +118,9 @@ nav{
   padding: 20px 20px;
   margin-bottom: 20px;
   border-radius: 5px;
-  border: 1px solid #cecece;
-  color: #cecece;
+  border: 1px solid #bbbbbb;
+  font-family: 'Lato', sans-serif;
+  color: #7b7b7b;
 }
 
 input.input-error{
@@ -130,7 +131,6 @@ input.input-error{
   border-radius: 5px;
   border: 1px solid #e66161;
   background: #fbe7e7;
-  color: #cecece;
 }
 
 form input.submit{

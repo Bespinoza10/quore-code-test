@@ -81,6 +81,21 @@
 
   #downloadForm-modal input{
     margin-bottom: 5px;
-    border: solid 1px #cececece;
+    border: solid 1px #bbbbbb;
+  }
+}
+
+@media only screen and (min-width : 1200px) {
+  h1{
+    font-size: 2.7rem
+  }
+  .img-wrapper{
+    width: 40%;
+  }
+  .home-text{
+    width: 60%;
+  }
+  div.modal-content{
+    width: 25%;
   }
 }
