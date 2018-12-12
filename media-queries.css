@@ -1,0 +1,64 @@
+@media only screen and (min-width : 768px) {
+  .img-wrapper{
+    width: 50%;
+    float: none;
+    margin: 0 auto;
+  }
+  .home-text{
+    text-align: left;
+  }
+  .home-text button{
+    padding: 15px 50px;
+    width: auto;
+  }
+  .tip-sheet-form{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .squares{
+    width: 25%;
+    float: left;
+    text-align: center;
+    display: inline-block;
+  }
+  .tablet-up{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 1024px) {
+  h1{
+    font-size: 2rem
+  }
+  #home{
+    width: 90%;
+  }
+  .img-wrapper{
+    display: inline-block;
+    width: 50%;
+    margin: 0 auto;
+    float: left;
+  }
+  .home-text{
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+  }
+  .home-text button{
+    padding: 15px 50px;
+    width: auto;
+  }
+  .tip-sheet-form{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .squares{
+    width: 25%;
+    float: left;
+    text-align: center;
+    display: inline-block;
+  }
+}
