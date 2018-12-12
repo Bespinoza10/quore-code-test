@@ -1,8 +1,6 @@
 :root {
   --modal-duration: 1s;
 }
-
-
 .modal {
   display: none;
   position: fixed;
@@ -14,7 +12,6 @@
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 .modal-content {
   margin: 10% auto;
   width: 30%;
@@ -22,20 +19,17 @@
   animation-name: modalopen;
   animation-duration: var(--modal-duration);
 }
-
 .modal-body {
   padding: 10px 20px;
   background: #fff;
   border-radius: 5px;
 }
-
 .close {
   color: #ccc;
   float: right;
   font-size: 30px;
   color: #fff;
 }
-
 .close:hover,
 .close:focus {
   color: #000;
