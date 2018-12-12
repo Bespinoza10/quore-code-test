@@ -11,6 +11,16 @@
 
 body{
   font-family: 'Lato', sans-serif;
+  margin: 0px;
+}
+p{
+  font-size: 16px;
+}
+h1{
+  font-size: 2.5rem
+}
+
+header{
   background-image: url('images/Background.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -18,12 +28,16 @@ body{
   background-size: cover;
   height: 100%;
 }
-p{
-  font-size: 16px;
-}
+
 
 .container{
-  padding: 10px 20px 10px 20px;
+  padding: 20px 0px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flt-left{
+  float: left;
 }
 
 nav{
@@ -41,9 +55,18 @@ nav{
   font-weight: bold;
 }
 
+.mobile{
+  display: block;
+}
+.tablet-up{
+  display: none;
+}
 #home{
   padding-top: 75px;
   max-width: 100%;
+}
+.img-wrapper{
+  width: 100%;
 }
 #home img{
   max-width: 100%;
@@ -52,7 +75,8 @@ nav{
 .home-text{
   color: #fff;
   text-align: center;
-  width: 90%;
+  /* width: 90%; */
+  margin: 0 auto;
 }
 
 .home-text button{
@@ -75,4 +99,83 @@ nav{
 
 .home-text ul li{
   padding-bottom: 15px;
+}
+
+/* form */
+#downloadForm{
+  text-align: center;
+}
+#downloadForm h2{
+  margin-top: 50px;
+  margin-bottom: 25px;
+  color: #2898E0;
+  font-size: 2rem;
+}
+
+#downloadForm input{
+  width: 100%;
+  font-size: 16px;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #cecece;
+  color: #cecece;
+}
+
+form button{
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #7ED321;
+  padding: 15px 0px;
+  width: 100%;
+  margin: 15px 0px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+}
+
+/* stats */
+#stats{
+  padding-top: 50px;
+  /* width: 90%; */
+  margin: 0 auto;
+}
+#stats h1{
+  color: #6DBD02;
+  text-align: center;
+  font-weight: 400;
+}
+.row{
+  width: 100%;
+  margin: 0 auto;
+}
+.squares{
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+}
+#stats .squares h1.stat-numbers{
+  color: #2898E0;
+  font-weight: bold;
+}
+.squares p{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100px;
+  margin-bottom: 30px;
+  color: #ABABAB;
+}
+
+/* footer */
+.footer-text{
+  width: 50%;
+  margin: 0 auto;
+}
+.footer-text p {
+  text-align: center;
+  color: #ABABAB;
+  font-size: 14px;
 }
