@@ -3,10 +3,12 @@
 }
 @font-face {
   font-family: "Lato";
-  src: url('Lato_Font/Lato-Medium.ttf') format('truetype'),
-  url('Lato_Font/Lato-Light.ttf'),
-  url('Lato_Font/Lato-Heavy.ttf'),
-  url('Lato_Font/Lato-Bold.ttf');
+  src: url('Lato_Font/Lato-Medium.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: "Lato-Light";
+  src: url('Lato_Font/Lato-Light.ttf') format('truetype');
 }
 
 body{
