@@ -16,7 +16,10 @@ body{
   background-attachment: scroll;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 100%;
+}
+p{
+  font-size: 16px;
 }
 
 .container{
@@ -36,4 +39,40 @@ nav{
   padding-left: 5px;
   color: #fff;
   font-weight: bold;
+}
+
+#home{
+  padding-top: 75px;
+  max-width: 100%;
+}
+#home img{
+  max-width: 100%;
+}
+
+.home-text{
+  color: #fff;
+  text-align: center;
+  width: 90%;
+}
+
+.home-text button{
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #7ED321;
+  padding: 15px 0px;
+  width: 100%;
+  margin: 15px 0px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+}
+
+.home-text ul {
+  text-align: left;
+}
+
+.home-text ul li{
+  padding-bottom: 15px;
 }
