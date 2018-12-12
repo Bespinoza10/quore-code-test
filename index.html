@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Quore Code Test</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="media-queries.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="stylesheet" href="css/modal.css">
 </head>
 <body>
   <header>
@@ -27,7 +28,8 @@
         <div class="home-text">
           <h1>Five tips to become a top performing hotel in 2018</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-          <button type="button">Download</button>
+          <a href="#downloadForm">Download</a>
+          <button id="modal-btn">Download</button>
           <h2>What's Inside</h2>
           <ul class="mobile">
             <li>Increse guest service & satisfaccion</li>
@@ -48,13 +50,32 @@
 
   <div id="downloadForm" class="container">
     <h2>Get Our Tip Sheet</h2>
-    <form class="tip-sheet-form">
-      <input type="text" name="name" placeholder="Name">
-      <input type="text" name="title" placeholder="Title">
-      <input type="text" name="email" placeholder="Email">
-      <input type="text" name="phone" placeholder="Phone">
-      <button type="submit">Download</button>
+    <p class="validation-message">Please enter required information.</p>
+    <form name="tip-sheet-form" class="tip-sheet-form" onsubmit="return validateMobileForm()">
+      <input id="required-name-mobile" type="text" name="name" placeholder="Name">
+      <input type="text" name="title" placeholder="Title (Optional)">
+      <input id="required-email-mobile" type="text" name="email" placeholder="Email">
+      <input type="text" name="phone" placeholder="Phone (Optional)">
+      <input class="submit" type="submit" value="Download">
     </form>
+  </div>
+
+  <div id="my-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div id="downloadForm-modal">
+          <h2>Get Our Tip Sheet</h2>
+          <p class="validation-message">Please enter required information.</p>
+          <form name="tip-sheet-form" class="tip-sheet-form" onsubmit="return validateForm()">
+            <input id="required-name" type="text" name="name" placeholder="Name">
+            <input type="text" name="title" placeholder="Title (Optional)">
+            <input id="required-email" type="text" name="email" placeholder="Email">
+            <input type="text" name="phone" placeholder="Phone (Optional)">
+            <input class="submit" type="submit" value="Download">
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div id="stats" class="container">
@@ -82,5 +103,6 @@
   </div>
 </body>
 
-<script src="index.js"></script>
+<script src="javascript/jquery.js"></script>
+<script src="javascript/index.js"></script>
 </html>

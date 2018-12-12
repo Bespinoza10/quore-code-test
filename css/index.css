@@ -21,7 +21,7 @@ h1{
 }
 
 header{
-  background-image: url('images/Background.png');
+  background-image: url('../images/Background.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -71,15 +71,12 @@ nav{
 #home img{
   max-width: 100%;
 }
-
 .home-text{
   color: #fff;
   text-align: center;
-  /* width: 90%; */
   margin: 0 auto;
 }
-
-.home-text button{
+.home-text a{
   color: #fff;
   font-size: 16px;
   font-weight: bold;
@@ -92,38 +89,50 @@ nav{
   border-radius: 5px;
   border: none;
 }
-
+#modal-btn{
+  display: none;
+}
 .home-text ul {
   text-align: left;
 }
-
 .home-text ul li{
   padding-bottom: 15px;
 }
 
 /* form */
-#downloadForm{
+#downloadForm, #downloadForm-modal{
   text-align: center;
 }
-#downloadForm h2{
+#downloadForm-modal h2, #downloadForm h2{
   margin-top: 50px;
   margin-bottom: 25px;
   color: #2898E0;
   font-size: 2rem;
 }
 
-#downloadForm input{
+#downloadForm-modal input, #downloadForm input{
   width: 100%;
   font-size: 16px;
   padding: 20px 20px;
   margin-bottom: 20px;
   border-radius: 5px;
-  border: 2px solid #cecece;
+  border: 1px solid #cecece;
   color: #cecece;
 }
 
-form button{
-  color: #fff;
+input.input-error{
+  width: 100%;
+  font-size: 16px;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #e66161;
+  background: #fbe7e7;
+  color: #cecece;
+}
+
+form input.submit{
+  color: #fff !important;
   font-size: 16px;
   font-weight: bold;
   background-color: #7ED321;
@@ -134,6 +143,11 @@ form button{
   text-decoration: none;
   border-radius: 5px;
   border: none;
+}
+
+.validation-message{
+  color: #e66161;
+  display: none;
 }
 
 /* stats */

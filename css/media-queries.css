@@ -7,7 +7,7 @@
   .home-text{
     text-align: left;
   }
-  .home-text button{
+  .home-text a{
     padding: 15px 50px;
     width: auto;
   }
@@ -34,7 +34,8 @@
     font-size: 2rem
   }
   #home{
-    width: 90%;
+    width: 80%;
+    margin: 0 auto;
   }
   .img-wrapper{
     display: inline-block;
@@ -47,18 +48,39 @@
     display: inline-block;
     text-align: left;
   }
-  .home-text button{
-    padding: 15px 50px;
-    width: auto;
+  #downloadForm{
+    display: none;
   }
-  .tip-sheet-form{
-    width: 70%;
+  #stats{
+    width: 60%;
     margin: 0 auto;
   }
-  .squares{
-    width: 25%;
-    float: left;
-    text-align: center;
+  #stats .squares h1.stat-numbers{
+   font-size: 2.8rem;
+  }
+  .home-text a{
+    display: none;
+  }
+  #modal-btn{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #7ED321;
+    padding: 15px 50px;
+    width: auto;
+    margin: 15px 0px;
     display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+  }
+  .tip-sheet-form{
+    width: 90%;
+  }
+
+  #downloadForm-modal input{
+    margin-bottom: 5px;
+    border: solid 1px #cececece;
   }
 }
